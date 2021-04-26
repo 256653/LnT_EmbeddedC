@@ -17,13 +17,21 @@ particuar range
 ## SIMULATION  RESULT
 
 **B1 ON**
+
+
 ![](img/b1.PNG)
 
 **B2 ON**
+
+
 ![](img/b2.PNG)
 
 **B3 ON**
+
+
 ![](img/b3.PNG)
 
 **B4 ON**
+
+
 ![](img/b4.png)
