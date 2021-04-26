@@ -15,13 +15,15 @@ particuar range
 |3.8-5.0|710-1024|B4 LED on|
 
 ## SIMULATION  RESULT
+
+**B1 ON**
 ![](img/b1.PNG)
 
-
+**B2 ON**
 ![](img/b2.PNG)
 
-
+**B3 ON**
 ![](img/b3.PNG)
 
-
+**B4 ON**
 ![](img/b4.png)
