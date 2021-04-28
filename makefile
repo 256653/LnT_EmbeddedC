@@ -1,12 +1,15 @@
-PROJ_NAME = Acti_1
+PROJ_NAME = Blinky
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c fuse.c
+SRC = main.c\
+src/activity1.c\
+src/activity2.c\
+src/activity3.c
 
 # All header file paths
-
+INC = -I inc
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
@@ -36,7 +39,7 @@ endif
 
 all:$(BUILD_DIR)
 	# Compile the code and generate the ELF file
-	$(CC) -g -Wall -Os -mmcu=atmega328  $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
+	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
 $(BUILD_DIR):
 	# Create directory to store the built files
