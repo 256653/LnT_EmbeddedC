@@ -39,7 +39,8 @@ int main(void)
     if(check==1)
     {
       LED_PORT|=(1<<LED_PIN);
-      temp=ReadADC(0);   
+      temp=ReadADC(0);  
+
       if((temp>=0 && temp<=200))
       {
         for(i=0;a[i]!='\0';i++)
@@ -49,6 +50,7 @@ int main(void)
         PWM_GEN=52;
         _delay_ms(2000);
       }
+
       else if(temp>=210 && temp<=500)
       {
         for(i=0;b[i]!='\0';i++)
@@ -58,6 +60,7 @@ int main(void)
         PWM_GEN=105;
         _delay_ms(2000);
       }
+
       else if(temp>=510 && temp<=700)
       {
         for(i=0;c[i]!='\0';i++)
@@ -67,7 +70,8 @@ int main(void)
         PWM_GEN=179;
         _delay_ms(2000);  
       }
-      else
+
+      else if(temp>=710 && temp<=1024)
       {
         for(i=0;d[i]!='\0';i++)
         {
