@@ -1,8 +1,6 @@
 |Cppcheck|Build|Codacy|
 |----|----|----|
 |[![Cppcheck](https://github.com/256653/LnT_EmbeddedC/actions/workflows/code.yml/badge.svg)](https://github.com/256653/LnT_EmbeddedC/actions/workflows/code.yml)|[![Compile-Linux](https://github.com/256653/LnT_EmbeddedC/actions/workflows/compile.yml/badge.svg)](https://github.com/256653/LnT_EmbeddedC/actions/workflows/compile.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/13a6dd6d992549519c2f825497cf3784)](https://www.codacy.com/gh/256653/LnT_EmbeddedC/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=256653/LnT_EmbeddedC&amp;utm_campaign=Badge_Grade)|
-
-
 # SEAT HEATING MECHANISM
 1.  The user enters the car and occupies the seat, one switch gets activated.
 2.  He/She turns on the heat sensor(which acts as second switch).
@@ -33,14 +31,11 @@ If the user seated on the seat, he has to turn on the heat button, only then the
 **To take input from temperature sensor and to indicate changes at a particular temparture.**
 
 Since temperature sensor is not availaible in simul ide, potentiometer is used and the voltages are calculated for particular range.
-
-### Simulation
 |Voltage(V)|0.0-1.0|1.2-2.4|2.5-3.6|3.8-5.0|
 |----|----|----|----|----|
 |**Analog Value**|0-200|210-500|510-700|710-1024|
 |**Status**|B1 LED ON|B2 LED ON|B3 LED ON|B4 LED ON|
 |**Simuation Results**|![b1](img/Act2/b1.PNG)|![b2](img/Act2/b2.PNG)|![b3](img/Act2/b3.PNG)|![b4](img/Act2/b4.PNG)|
-
 
 ## Activity 3
 
