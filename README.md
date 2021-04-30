@@ -1,21 +1,21 @@
+|Cppcheck|Build|Codacy|
+|----|----|----|
+|[![Cppcheck](https://github.com/256653/LnT_EmbeddedC/actions/workflows/code.yml/badge.svg)](https://github.com/256653/LnT_EmbeddedC/actions/workflows/code.yml)|[![Compile-Linux](https://github.com/256653/LnT_EmbeddedC/actions/workflows/compile.yml/badge.svg)](https://github.com/256653/LnT_EmbeddedC/actions/workflows/compile.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/13a6dd6d992549519c2f825497cf3784)](https://www.codacy.com/gh/256653/LnT_EmbeddedC/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=256653/LnT_EmbeddedC&amp;utm_campaign=Badge_Grade)|
 
-[![Compile-Linux](https://github.com/256653/LnT_EmbeddedC/actions/workflows/compile.yml/badge.svg)](https://github.com/256653/LnT_EmbeddedC/actions/workflows/compile.yml)
-[![Cppcheck](https://github.com/256653/LnT_EmbeddedC/actions/workflows/code.yml/badge.svg)](https://github.com/256653/LnT_EmbeddedC/actions/workflows/code.yml)
 
 # SEAT HEATING MECHANISM
-1. The user enters the car and occupies the seat, one switch gets activated.
-2. He/She turns on the heat sensor(which acts as second switch).
-3. If both of the above condition are met, then the LED will turn ON and the temperature sensor keeps monitoring and recording the temperature value to ATmega328.
-4. ATmega328 will convert the input analog value and will give the output of temperature value using UART( Serial communication).
-5. The temperature value will be diplayed on the screen.
+1.  The user enters the car and occupies the seat, one switch gets activated.
+2.  He/She turns on the heat sensor(which acts as second switch).
+3.  If both of the above condition are met, then the LED will turn ON and the temperature sensor keeps monitoring and recording the temperature value to ATmega328.
+4.  ATmega328 will convert the input analog value and will give the output of temperature value using UART( Serial communication).
+5.  The temperature value will be diplayed on the screen.
 
-# SIMULATION RESULTS
+## SIMULATION RESULTS
 ![IMG](img/Act4/42.jpeg)
 
 ## Activity 1
 
 If the user seated on the seat, he has to turn on the heat button, only then the LED should turn ON.
-
 | Logic State | LED Status |
 | ----- | ----- |
 | 0 0 | OFF |
@@ -23,7 +23,7 @@ If the user seated on the seat, he has to turn on the heat button, only then the
 | 1 0 | OFF |
 | 1 1 | ON |
 
-### Simulation Results
+### Simulation 
 |Both Switches are open|Either one of switches is open|Either one of switches is open|Both the switches are closed|
 |----|----|----|----|
 |![st1](img/Act1/st1.PNG)|![st2](img/Act1/st2.PNG)|![st3](img/Act1/st3.PNG)|![st4](img/Act1/st4.PNG)|
@@ -34,7 +34,7 @@ If the user seated on the seat, he has to turn on the heat button, only then the
 
 Since temperature sensor is not availaible in simul ide, potentiometer is used and the voltages are calculated for particular range.
 
-
+### Simulation
 |Voltage(V)|0.0-1.0|1.2-2.4|2.5-3.6|3.8-5.0|
 |----|----|----|----|----|
 |**Analog Value**|0-200|210-500|510-700|710-1024|
@@ -45,7 +45,6 @@ Since temperature sensor is not availaible in simul ide, potentiometer is used a
 ## Activity 3
 
 **To generate PWM at different analog values**
-
 |ADC Value(Temp Sensor)|Output PWM|
 |----|----|
 |0-200|20%|
@@ -53,14 +52,11 @@ Since temperature sensor is not availaible in simul ide, potentiometer is used a
 |510-700|70%|
 |710-1024|95%|
 
-### Simulation Results
-
+### Simulation 
 |Output PWM 20%|Output PWM 40%|Output PWM 71%|Output PWM 95%|
 |----|----|----|----|
 |![33](img/Act3/33.jpeg)|![34](img/Act3/34.jpeg)|![32](img/Act3/32.jpeg)|![31](img/Act3/31.jpeg)|
 
 ## Activity 4
-
 **To send the temperature value to Serial monitor**
-
 ![SM](img/Act4/43.jpeg)
