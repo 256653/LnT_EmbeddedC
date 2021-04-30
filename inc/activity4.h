@@ -5,7 +5,8 @@
 #include<avr/interrupt.h>
 #include<util/delay.h>
 
-void USART_Init(unsigned int ubrr);
-void USART_Transmit(unsigned char data);
+
+void Init_USART(unsigned int ubrr);
+void Transmit_USART(unsigned char data);
 
 #endif

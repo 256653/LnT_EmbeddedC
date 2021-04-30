@@ -4,5 +4,5 @@
 #include <avr/io.h>
 #include<util/delay.h>
 
-uint8_t check_seating();
+uint8_t check_seat_status();
 #endif

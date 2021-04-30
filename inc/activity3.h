@@ -5,5 +5,5 @@
 #include<avr/interrupt.h>
 #include<util/delay.h>
 
-void set_pwm();
+void init_PWM();
 #endif

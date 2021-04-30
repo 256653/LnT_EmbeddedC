@@ -4,6 +4,6 @@
 #include <avr/io.h>
 #include<util/delay.h>
 
-void initADC();
-uint16_t ReadADC(uint8_t ch);
+void init_ADC();
+uint16_t read_ADC(uint8_t ch);
 #endif

@@ -1,9 +1,9 @@
-PROJ_NAME = Blinky
+PROJ_NAME = SEAT_HEATING
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = main.c\
+SRC = seat_heating_app.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
